@@ -1,0 +1,126 @@
+﻿/* css框架定位：只用于辅助前台个性化布局的数据展示，只写常用的样式，不是后台框架，提供边距、宽度、浮动，不提供具体的布局方式（BootStrap则是提供更加具体的布局方式） */
+html,body,form,div,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,input{margin: 0px;padding: 0px;}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}  /* 高度和宽度包括border-width和padding的值 */
+html,body{height:100%;}
+body
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+ol,ul{list-style: none;}
+a{color:inherit;text-decoration: none;}
+a:hover{color:#007BC4;}
+img{border:0;}
+em,i{font-style:normal;}
+table{border-spacing: 0;border-collapse: collapse;}
+/***** 类样式 *****/
+.dvm{display:inline-block;vertical-align:middle;}
+.textR{text-align:right;}
+.textC{text-align:center;}
+.hidEll{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.lineH24 {line-height:24px;}
+.lineH26 {line-height:26px;}
+.lineH28 {line-height:28px;}
+.lineH30 {line-height:30px;}
+
+.floatL,.floatLg>*{float:left;}
+.floatR,.floatRg>*{float:right;}
+.floatLg:after,.floatRg:after,.clear:after{display:table;content:" ";clear:both;}  /* 清除浮动 */
+
+.paddingLR5,.paddingLR5g>*{padding-left:5px;padding-right:5px;}
+.paddingLR10,.paddingLR10g>*{padding-left:10px;padding-right:10px;}
+.paddingLR15,.paddingLR15g>*{padding-left:15px;padding-right:15px;}
+.paddingLR20,.paddingLR20g>*{padding-left:20px;padding-right:20px;}
+.paddingLR25,.paddingLR25g>*{padding-left:25px;padding-right:25px;}
+.paddingLR30,.paddingLR30g>*{padding-left:30px;padding-right:30px;}
+.paddingLR5g {margin-left:-5px;margin-right:-5px;}
+.paddingLR10g {margin-left:-10px;margin-right:-10px;}
+.paddingLR15g {margin-left:-15px;margin-right:-15px;}
+.paddingLR20g {margin-left:-20px;margin-right:-20px;}
+.paddingLR25g {margin-left:-25px;margin-right:-25px;}
+.paddingLR30g {margin-left:-30px;margin-right:-30px;}
+
+.paddingT10{padding-top:10px;}
+.paddingT15{padding-top:15px;}
+.paddingT20{padding-top:20px;}
+.paddingR10{padding-right:10px;}
+.paddingR15{padding-right:15px;}
+.paddingR20{padding-right:20px;}
+.paddingB10{padding-bottom:10px;}
+.paddingB15{padding-bottom:15px;}
+.paddingB20{padding-bottom:20px;}
+.paddingL10{padding-left:10px;}
+.paddingL15{padding-left:15px;}
+.paddingL20{padding-left:20px;}
+
+.marginT5{margin-top:5px;}
+.marginT10{margin-top:10px;}
+.marginT15{margin-top:15px;}
+.marginT20{margin-top:20px;}
+.marginT30{margin-top:30px;}
+.marginL5,.marginL5g>*{margin-left:5px;}
+.marginL10,.marginL10g>*{margin-left:10px;}
+.marginL15,.marginL15g>*{margin-left:15px;}
+.marginL20,.marginL20g>*{margin-left:20px;}
+.marginL30,.marginL30g>*{margin-left:30px;}
+.marginB5,.marginB5g>*{margin-bottom:5px;}
+.marginB10,.marginB10g>*{margin-bottom:10px;}
+.marginB15,.marginB15g>*{margin-bottom:15px;}
+.marginB20,.marginB20g>*{margin-bottom:20px;}
+.marginB30,.marginB30g>*{margin-bottom:30px;}
+.marginR5,.marginR5g>*{margin-right:5px;}
+.marginR10,.marginR10g>*{margin-right:10px;}
+.marginR15,.marginR15g>*{margin-right:15px;}
+.marginR20,.marginR20g>*{margin-right:20px;}
+.marginR30,.marginR30g>*{margin-right:30px;}
+/***** 网格系统 *****/
+.width1g > *, .width2g > *, .width3g > *, .width4g > *, .width6g > * {float: left;}
+.width1g:after, .width2g:after, .width3g:after, .width4g:after, .width6g:after {display: table;content: " ";clear: both;}
+.width1, .width1g > * {width: 8.33333333%;}
+.width2, .width2g > * {width: 16.66666667%;}
+.width3, .width3g > * {width: 25%;}
+.width4, .width4g > * {width: 33.33333333%;}
+.width5 {width: 41.66666667%;}
+.width6, .width6g > * {width: 50%;}
+.width7 {width: 58.33333333%;}
+.width8 {width: 66.66666667%;}
+.width9 {width: 75%;}
+.width10 {width: 83.33333333%;}
+.width11 {width: 91.66666667%;}
+.width12, .width12g > * {width: 100%;}
+@media (max-width: 992px) {
+    .displayMN {display:none;}
+    .widthM1g > *, .widthM2g > *, .widthM3g > *, .widthM4g > *, .widthM6g > * {float: left;}
+    .widthM1g:after, .widthM2g:after, .widthM3g:after, .widthM4g:after, .widthM6g:after {display: table;content: " ";clear: both;}
+    .widthM1, .widthM1g > * {width: 8.33333333%;}
+    .widthM2, .widthM2g > * {width: 16.66666667%;}
+    .widthM3, .widthM3g > * {width: 25%;}
+    .widthM4, .widthM4g > * {width: 33.33333333%;}
+    .widthM5 {width: 41.66666667%;}
+    .widthM6, .widthM6g > * {width: 50%;}
+    .widthM7 {width: 58.33333333%;}
+    .widthM8 {width: 66.66666667%;}
+    .widthM9 {width: 75%;}
+    .widthM10 {width: 83.33333333%;}
+    .widthM11 {width: 91.66666667%;}
+    .widthM12, .widthM12g > * {width: 100%;}
+}
+@media (max-width: 768px) {
+    .displaySN {display:none;}
+    .widthS1g > *, .widthS2g > *, .widthS3g > *, .widthS4g > *, .widthS6g > * {float: left;}
+    .widthS1g:after, .widthS2g:after, .widthS3g:after, .widthS4g:after, .widthS6g:after {display: table;content: " ";clear: both;}
+    .widthS1, .widthS1g > * {width: 8.33333333%;}
+    .widthS2, .widthS2g > * {width: 16.66666667%;}
+    .widthS3, .widthS3g > * {width: 25%;}
+    .widthS4, .widthS4g > * {width: 33.33333333%;}
+    .widthS5 {width: 41.66666667%;}
+    .widthS6, .widthS6g > * {width: 50%;}
+    .widthS7 {width: 58.33333333%;}
+    .widthS8 {width: 66.66666667%;}
+    .widthS9 {width: 75%;}
+    .widthS10 {width: 83.33333333%;}
+    .widthS11 {width: 91.66666667%;}
+    .widthS12, .widthS12g > * {width: 100%;}
+}
